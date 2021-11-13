@@ -13,6 +13,9 @@ if ($clientid == "") {
 }
 
 $tokenPassword = htmlspecialchars($_GET["tokenPassword"]);
+echo "0000";
+     echo "0000" . " :" . $token_password . ":" . $tokenPassword . ":";
+    print('token_password' . $token_password . " Friendly Name: " . $tokenPassword . "\xA");
 if ($tokenPassword == "") {
     echo '-- tokenPassword must be a GET parameter.';
     return;
