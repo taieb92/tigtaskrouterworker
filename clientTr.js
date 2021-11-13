@@ -251,10 +251,10 @@ function setWorkSpace(workerActivity) {
 // -----------------------------------------------------------------------------
 // Get a TaskRouter Worker token.
 function trToken() {
-    if (trTokenValid) {
+   // if (trTokenValid) {
         $("div.msgTokenPassword").html("TaskRouter token already valid.");
         return;
-    }
+  //  }
     clearMessages();
     clientId = $("#clientid").val();
     if (clientId === "") {
