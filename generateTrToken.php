@@ -19,10 +19,9 @@ if ($tokenPassword == "") {
 }
 $token_password = getenv("TOKEN_PASSWORD");
 if ($token_password !== $tokenPassword) {
-     echo "0" . " :" . $token_password . ":" . $tokenPassword . ":";
+    echo "0000";
+     echo "0000" . " :" . $token_password . ":" . $tokenPassword . ":";
     print('token_password' . $token_password . " Friendly Name: " . $tokenPassword . "\xA");
-    logger("---ttt------");
-    logger("---------"  . $token_password . " Friendly Name: " . $tokenPassword);
     echo "0";
     return;
 }
