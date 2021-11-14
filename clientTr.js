@@ -275,7 +275,7 @@ function trToken() {
     $("div.trMessages").html("Refreshing token, please wait.");
     $.get("generateTrToken.php?tokenPassword=" + tokenPassword + "&clientid=" + clientId, function (theToken) {
         if (theToken.startsWith('0')) {
-            $("div.trMessages").html("Invalidd password.");
+            $("div.trMessages").html("Invaliddd password.");
             return;
         }
         if (theToken.startsWith('1')) {
